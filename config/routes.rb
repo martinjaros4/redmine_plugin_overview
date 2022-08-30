@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get "/table", to: "table#index"
+  get "/overview", to: "overview#index"
 end
