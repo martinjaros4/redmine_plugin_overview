@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get "/remotetable", to: "remotetable#index"
+  get "/table", to: "table#index"
 end
