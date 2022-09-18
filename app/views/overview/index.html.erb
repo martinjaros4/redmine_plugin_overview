@@ -1,19 +1,4 @@
-<h1>Table of issues</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>fronta</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @issues.each do |issue| %>
-      <tr>
-        <td><%= issue.id %></td>
-        <td><%= issue.tracker.name %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h1>Přehled úkolů</h1>
+<ul>
+<%= render partial: "issue", collection: @issue_roots %>
+</ul>
